@@ -1,6 +1,6 @@
 # Installing-Updating-and-Removing-Software-in-Linux
 
-<h3>Objectives</h3>
+<h2>Objectives</h2>
 
 - Update VLC Media Player to the newest version
 - Install Firefox on the machine
@@ -10,7 +10,9 @@
 
 - Many commands you'll use start with "sudo". It is used across Linux to tell the system that you're the "superuser". This grants permission to perform sensitive operations, like installing or uninstalling software.
 
-<h3>Verifying Installed Software on Linux</h3>
+<br>
+
+<h2>Verifying Installed Software on Linux</h2>
 
 Use the command "dpkg -s" followed by the unique package name for a program to quickly check if it's already installed on Linux. The "-s" in dpkg stands for "search," which allows you to search for a program on your machine and see if it's installed. For example, Firefox isn't installed, but GIMP is.
 
@@ -20,7 +22,9 @@ Use the command "dpkg -s" followed by the unique package name for a program to q
     dpkg -s gimp
 ![image](https://github.com/n8som/Installing-Updating-and-Removing-Software-in-Linux/assets/110139109/3aa98e2d-7912-4d3a-a976-4ec14a36f039)
 
-<h3>Updating VLC Media Player</h3>
+<br>
+
+<h2>Updating VLC Media Player</h2>
 
 The command below shows that vlc is installed, but out of date.
 
@@ -40,7 +44,9 @@ After it updates search vlc again to verify it got updated by looking at the ver
 
 ![image](https://github.com/n8som/Installing-Updating-and-Removing-Software-in-Linux/assets/110139109/1ccc710c-528a-4c87-a66a-83b119cb38b3)
 
-<h3>Installing Mozilla Firefox</h3>
+<br>
+
+<h2>Installing Mozilla Firefox</h2>
 
 Now let's install Firefox. Parts of this process will be unique to this installation, but most steps you take will be identical, regardless of the software you are trying to install onto your Linux machine. A lot of common programs are set up in repositories that most Linux distributions are aware of, by default. This makes installing these programs very easy. You won't have to manually download and install the program. To make sure the repositories are up to date run this command:
 
@@ -62,7 +68,9 @@ Firefox will now be installed. To verify that it's installed use the search comm
 
 ![image](https://github.com/n8som/Installing-Updating-and-Removing-Software-in-Linux/assets/110139109/381d0821-c532-4b76-862d-0910da547f3f)
 
-<h3>Uninstalling GIMP</h3>  
+<br>
+
+<h2>Uninstalling GIMP</h2>  
 
 GIMP, like Firefox, can be installed and uninstalled using the "apt-get" commands we used to install Firefox. To uninstall GIMP, or any other program you want to uninstall from your Linux machine, you would use "remove".
 
@@ -77,5 +85,7 @@ After uninstallation, you can confirm the removal of GIMP by once again searchin
     dpkg -s gimp
 
 ![image](https://github.com/n8som/Installing-Updating-and-Removing-Software-in-Linux/assets/110139109/b3debcc9-d1c3-445b-8b66-2ec84b8bfa45)
+
+<br>
 
 <h4>Congrats! You've now learned how to Install, Update, and Remove Software in Linux!</h4>
